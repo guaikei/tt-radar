@@ -6,6 +6,11 @@ name: tt-radar
 description: "TikTok机会雷达数据源（只读）：关键词搜视频、博主作品、视频评论，输出 JSON，不登录不发布。触发词：TikTok、tiktok、抖音国际版、TikTok搜索、TikTok评论、TikTok博主。用户要查 TikTok 视频、评论、爆款选题、竞品监控、KOL 筛选或评论舆情时使用；抖音、小红书、快手、B站、微博、公众号不要用本技能。"
 license: MIT
 version: 1.1.3
+display_name: "TikTok机会雷达｜蓝海选题·低竞争赛道·流量洼地"
+display_name_en: "TikTok Opportunity Radar"
+description_zh: "TikTok机会雷达数据源（只读）：①关键词搜索视频，支持相关度/最多点赞排序与时间窗（当天/1/7/30/90/180 天）筛选；②按主页链接、@用户名或 sec_uid 批量拉取博主公开作品，支持最新/最热排序；③按视频链接或作品 ID 拉取评论区与互动数据。全部以结构化 JSON 输出（统一信封 status/error_code/request/metadata/results，stdout 纯 JSON、退出码 0/1/2/3 语义明确，日志走 stderr），供 AI 直接扫描机会；零第三方 npm 依赖，仅用 Node 内置模块，Win/mac/Linux 全平台。不登录、不发布、不点赞、不评论、不关注，仅取公开可见数据。按量单次最多 1 万条；包月搜索最多 30、作品最多 30、评论最多 40，超限返回 PLAN_LIMIT（退出码 1），可降 limit 或升级套餐，须用户同意后再跑。适用于海外蓝海选题、低竞争赛道发现、流量洼地挖掘、竞品内容策略与评论舆情分析。"
+description_en: "Read-only TikTok opportunity-radar data source. (1) Keyword video search with relevance or most-liked sorting plus time-window filters (today/1/7/30/90/180 days). (2) Batch public video lists for a creator via profile URL, @handle, or sec_uid, sorted by latest or hottest. (3) Comments and engagement data for a video via URL or item ID. All output is structured JSON (unified envelope with status/error_code/request/metadata/results; stdout-only JSON, clear exit codes 0/1/2/3, logs on stderr) so AI can scan opportunities directly; zero npm dependencies, Node built-ins only, Windows/macOS/Linux. No login, no posting, liking, commenting, or following - public data only. Pay-per-use runs cap at 10,000 items; monthly plans cap search at 30, creator videos at 30, and comments at 40, returning PLAN_LIMIT (exit 1) on breach - lower --limit or upgrade with user consent before retrying. Ideal for overseas blue-ocean topics and low-competition niche discovery."
+author: "新郑市怪奇信息技术工作室"
 metadata:
   openclaw:
     emoji: "🎵"
